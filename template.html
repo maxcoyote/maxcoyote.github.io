@@ -1,0 +1,13 @@
+<div class="social-feed-element {{? !it.moderation_passed}}hidden{{?}}" dt-create="{{=it.dt_create}}" social-feed-id = "{{=it.id}}">
+    <div class='content'>
+        <div class="media-body">
+            <div class='text-wrapper'>
+                <p class="social-feed-text">{{=it.text}}</p>
+            </div>
+            <p>
+                <span class="muted pull-right"> {{=it.time_ago}}</span>
+            </p>
+        </div>
+    </div>
+    {{=it.attachment}}
+</div>
